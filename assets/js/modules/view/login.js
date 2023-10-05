@@ -13,7 +13,7 @@ export function createForm(id, logintekst) {
       <label for="brugernavn">Brugernavn</label>
       <input name="brugernavn" type="text" id="${userIndput}">
       <label for="password">Password</label>
-      <input name="password" type="password id="${passIndput}">
+      <input name="password" type="password" id="${passIndput}">
       <button onclick="window._myEventListners.checkUser('${userIndput}', '${passIndput}')">${logintekst}</button>
       <p id="errorText"></p>
    </section>
