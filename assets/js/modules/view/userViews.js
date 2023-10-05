@@ -24,10 +24,30 @@ export function showAllUsers(userData, displayElement, buttonIf, buttonText) {
             //myEditButton = `<button onclick="showUser(${userObject.id})">edit</button>`;
         }
 
-        myUserHtml += `<tr><td>${userObject.firstName}</td><td>${userObject.lastName}</td><td>${myEditButton}</td></tr>`;
+        myUserHtml += `
+        <tbody>
+            <tr>
+                <td>${userObject.firstName}</td>
+                <td>${userObject.lastName}</td>
+                <td>${myEditButton}</td>
+            </tr>
+            </tbody>`;
     });
 
-    myApp.innerHTML = `<section class="userViews"><h2>Users</h2><table><tr><th>Fornavn</th><th>efternavn</th><th></th></tr>${myUserHtml}</table></section>`;
+    myApp.innerHTML = `
+    <section class="userViews">
+        <h2>Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fornavn</th>
+                    <th>Efternavn</th>
+                    <th></th>
+                </tr>
+            </thead>
+            ${myUserHtml}
+        </table>
+    </section>`;
 
 }
 
