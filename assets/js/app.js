@@ -59,7 +59,7 @@ function userClicked(myId) {
 }
 
 function userViewDone() {
-    showAllUsers(globalUserData, 'app', true);
+    showAllUsers(globalUserData, 'app', true, "vis");
 }
 
 function checkUser(theUserIndput, thepasswordIndput) {
